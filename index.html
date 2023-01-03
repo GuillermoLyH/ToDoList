@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+    </style>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1 class="tittle marg">My to-do list</h1>
+      <p class="sub-tittle marg">Double-click an item to mark it complete.</p>
+      <div class="horizontal-div-1 marg add-sect">
+        <input class="todo-input" type="text" name="to-do" id="to-do" />
+        <button class="btn blue-btn small">Add</button>
+      </div>
+      <ol class="things-list marg">
+       
+      </ol>
+      <div class="horizontal-div-1 marg dynamic">
+        <button class="btn blue-btn large">Clear Completed</button>
+        <button class="btn red" onclick="RmvList()">Empty List</button>
+        <button class="btn green">Save List</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
